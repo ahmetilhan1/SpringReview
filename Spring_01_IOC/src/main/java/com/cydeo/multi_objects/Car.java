@@ -1,5 +1,7 @@
 package com.cydeo.multi_objects;
 
+import org.springframework.stereotype.Component;
+
 public class Car {
 
     private String make;

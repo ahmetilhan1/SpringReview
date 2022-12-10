@@ -9,7 +9,7 @@ public class CydeoApp {
 
         ApplicationContext container = new AnnotationConfigApplicationContext(CarConfig.class);
 
-        Car car1 = container.getBean(Car.class); //have to add here
+        Car car1 = container.getBean("c2",Car.class); //have to add here
 
         System.out.println(car1.getMake());
 
