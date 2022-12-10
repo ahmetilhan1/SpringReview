@@ -16,7 +16,7 @@ public class CydeoApp {
         partTimeMentor.createAccount();
         */
 
-        ApplicationContext container = new AnnotationConfigApplicationContext(ConfigApp.class);
+        ApplicationContext container = new AnnotationConfigApplicationContext(ConfigApp.class,AnotherConfigApp.class);
 
         FullTimeMentor ft = container.getBean(FullTimeMentor.class);
 
@@ -25,6 +25,18 @@ public class CydeoApp {
         PartTimeMentor pt = container.getBean(PartTimeMentor.class);
 
         pt.createAccount();
+
+        String str = container.getBean(String.class);
+
+        System.out.println(str);
+
+        Integer integer = container.getBean(Integer.class);
+
+        System.out.println(integer);
+
+
+
+
 
 
     }
