@@ -11,9 +11,11 @@ public class CydeoApp {
 
         ApplicationContext container = new AnnotationConfigApplicationContext(ConfigApp.class);
 
-        JavaService java = container.getBean(JavaService.class);
+        JavaService java1 = container.getBean(JavaService.class);
+        JavaService java2 = container.getBean(JavaService.class);
 
-        java.getTeachingHours();
+        System.out.println(java1);
+        System.out.println(java2);
 
     }
 }
