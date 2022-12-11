@@ -11,6 +11,7 @@
         <module name="Spring_01_IOC" />
         <module name="springboot-practice" />
         <module name="Spring-01-IOC" />
+        <module name="Spring-04-MVC-Model" />
         <module name="Spring-02-Qualifier" />
       </profile>
     </annotationProcessing>
@@ -18,6 +19,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Spring-03-MVC" options="-parameters" />
+      <module name="Spring-04-MVC-Model" options="-parameters" />
       <module name="springboot-practice" options="-parameters" />
     </option>
   </component>
