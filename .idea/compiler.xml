@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Spring-03-MVC" />
         <module name="Spring_01_IOC" />
         <module name="springboot-practice" />
         <module name="Spring-01-IOC" />
@@ -16,6 +17,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Spring-03-MVC" options="-parameters" />
       <module name="springboot-practice" options="-parameters" />
     </option>
   </component>
