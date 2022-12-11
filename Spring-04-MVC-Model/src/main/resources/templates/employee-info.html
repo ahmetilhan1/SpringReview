@@ -12,6 +12,25 @@ LastName: <h3 th:text="${emp.lastname}"></h3>
 Salary: <h3 th:text="${emp.salary}"></h3>
 
 
+<h4 th:text="${'Hello '+ emp.firstname}"></h4>
+<br>
+<a th:href="@{https://cydeo.com}">Home Page</a>
+<br>
+<a th:href="@{/employees}">Employee List</a>
+<br>
+<a th:href="@{/employees(name=Mike)}">Add Query 1</a>
+<br>
+<a th:href="@{/employees(name=${emp.firstname})}">Add Query 2</a>
+
+<div th:text="${emp.salary > 80000?'Cool':'Ok'}"></div>
+
+<div>
+  <span th:if="${emp.firstname=='Ahmet'}"> Hi Ahmet!</span>
+  <span th:unless="${emp.firstname=='Ahmet'}">Hi Employee!</span>
+</div>
+
+<div th:replace="/fragments/footer :: footer-fixed"></div>
+
 
 </body>
 </html>
