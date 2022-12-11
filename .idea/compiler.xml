@@ -7,9 +7,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Spring_01_IOC" />
+        <module name="springboot-practice" />
         <module name="Spring-01-IOC" />
         <module name="Spring-02-Qualifier" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springboot-practice" options="-parameters" />
+    </option>
   </component>
 </project>
